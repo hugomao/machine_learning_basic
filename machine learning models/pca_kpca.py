@@ -19,7 +19,7 @@ def pca(x):
 		V = tmp[::-1]
 		S = np.sqrt(e)[::-1]
 		for i in range(V.shape[1]):
-			V[:,i] / = S
+			V[:,i] /= S
 	return V,S,mean_x
 
 
