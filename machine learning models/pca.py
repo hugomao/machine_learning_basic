@@ -46,7 +46,7 @@ def kernel_pca(x,gamma,k):
 
 def kernel_pca_proj(x_new,x,alphas,lambdas,gamma):
     K_new = np.exp(-gamma*np.sum((x-x_new)**2, 1))
-    return K_new.dot(alphas / lambdas)
+    return K_new.dot(alphas / np.sqrt(lambdas))  #normalize alpha
 
 
 
