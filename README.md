@@ -1,1 +1,1 @@
-# Basic machine learning sessions
+# 机器学习相关学习笔记
